@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F34DB3E11A78751B000FB88C /* TextPostRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34DB3E01A78751B000FB88C /* TextPostRowController.swift */; };
+		F362FD631A68AC51004D95F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362FD621A68AC51004D95F4 /* AppDelegate.swift */; };
+		F362FD651A68AC51004D95F4 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362FD641A68AC51004D95F4 /* BrowseViewController.swift */; };
+		F362FD681A68AC51004D95F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F362FD661A68AC51004D95F4 /* Main.storyboard */; };
+		F362FD6A1A68AC51004D95F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F362FD691A68AC51004D95F4 /* Images.xcassets */; };
+		F362FD6D1A68AC51004D95F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F362FD6B1A68AC51004D95F4 /* LaunchScreen.xib */; };
+		F362FD791A68AC51004D95F4 /* Reddit4WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362FD781A68AC51004D95F4 /* Reddit4WatchTests.swift */; };
+		F362FD8B1A68AC6B004D95F4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362FD8A1A68AC6B004D95F4 /* InterfaceController.swift */; };
+		F362FD8D1A68AC6B004D95F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F362FD8C1A68AC6B004D95F4 /* Images.xcassets */; };
+		F362FD911A68AC6B004D95F4 /* Reddit4Watch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F362FD901A68AC6B004D95F4 /* Reddit4Watch WatchKit App.app */; };
+		F362FD991A68AC6B004D95F4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F362FD971A68AC6B004D95F4 /* Interface.storyboard */; };
+		F362FD9B1A68AC6B004D95F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F362FD9A1A68AC6B004D95F4 /* Images.xcassets */; };
+		F362FD9E1A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F362FD861A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F362FDA71A68ACBA004D95F4 /* RedditJsonFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362FDA61A68ACBA004D95F4 /* RedditJsonFetcher.swift */; };
+		F362FDA91A68AD31004D95F4 /* JsonPostParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362FDA81A68AD31004D95F4 /* JsonPostParser.swift */; };
+		F362FDAB1A68AD57004D95F4 /* ThumbnailPostRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362FDAA1A68AD57004D95F4 /* ThumbnailPostRowController.swift */; };
+		F377C8FC1A7C08CF0019D8F9 /* TextPostInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377C8FB1A7C08CF0019D8F9 /* TextPostInterfaceController.swift */; };
+		F377C8FE1A7C242E0019D8F9 /* ThumbnailPostInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377C8FD1A7C242E0019D8F9 /* ThumbnailPostInterfaceController.swift */; };
+		F3923AD91AA9D8CB00078FAD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3923AD81AA9D8CB00078FAD /* SettingsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F362FD731A68AC51004D95F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F362FD551A68AC51004D95F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F362FD5C1A68AC51004D95F4;
+			remoteInfo = Reddit4Watch;
+		};
+		F362FD921A68AC6B004D95F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F362FD551A68AC51004D95F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F362FD8F1A68AC6B004D95F4;
+			remoteInfo = "Reddit4Watch WatchKit App";
+		};
+		F362FD9C1A68AC6B004D95F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F362FD551A68AC51004D95F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F362FD851A68AC6B004D95F4;
+			remoteInfo = "Reddit4Watch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F362FDA51A68AC6B004D95F4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F362FD9E1A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F34DB3E01A78751B000FB88C /* TextPostRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPostRowController.swift; sourceTree = "<group>"; };
+		F362FD5D1A68AC51004D95F4 /* Reddit4Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit4Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F362FD611A68AC51004D95F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F362FD621A68AC51004D95F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F362FD641A68AC51004D95F4 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		F362FD671A68AC51004D95F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F362FD691A68AC51004D95F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F362FD6C1A68AC51004D95F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F362FD721A68AC51004D95F4 /* Reddit4WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reddit4WatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F362FD771A68AC51004D95F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F362FD781A68AC51004D95F4 /* Reddit4WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reddit4WatchTests.swift; sourceTree = "<group>"; };
+		F362FD861A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Reddit4Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F362FD891A68AC6B004D95F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F362FD8A1A68AC6B004D95F4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F362FD8C1A68AC6B004D95F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F362FD901A68AC6B004D95F4 /* Reddit4Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reddit4Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F362FD961A68AC6B004D95F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F362FD981A68AC6B004D95F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F362FD9A1A68AC6B004D95F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F362FDA61A68ACBA004D95F4 /* RedditJsonFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditJsonFetcher.swift; sourceTree = "<group>"; };
+		F362FDA81A68AD31004D95F4 /* JsonPostParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonPostParser.swift; sourceTree = "<group>"; };
+		F362FDAA1A68AD57004D95F4 /* ThumbnailPostRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailPostRowController.swift; sourceTree = "<group>"; };
+		F377C8FB1A7C08CF0019D8F9 /* TextPostInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPostInterfaceController.swift; sourceTree = "<group>"; };
+		F377C8FD1A7C242E0019D8F9 /* ThumbnailPostInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailPostInterfaceController.swift; sourceTree = "<group>"; };
+		F3923AD81AA9D8CB00078FAD /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F362FD5A1A68AC51004D95F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F362FD6F1A68AC51004D95F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F362FD831A68AC6B004D95F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F362FD541A68AC51004D95F4 = {
+			isa = PBXGroup;
+			children = (
+				F362FD5F1A68AC51004D95F4 /* Reddit4Watch */,
+				F362FD751A68AC51004D95F4 /* Reddit4WatchTests */,
+				F362FD871A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension */,
+				F362FD941A68AC6B004D95F4 /* Reddit4Watch WatchKit App */,
+				F362FD5E1A68AC51004D95F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F362FD5E1A68AC51004D95F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F362FD5D1A68AC51004D95F4 /* Reddit4Watch.app */,
+				F362FD721A68AC51004D95F4 /* Reddit4WatchTests.xctest */,
+				F362FD861A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension.appex */,
+				F362FD901A68AC6B004D95F4 /* Reddit4Watch WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F362FD5F1A68AC51004D95F4 /* Reddit4Watch */ = {
+			isa = PBXGroup;
+			children = (
+				F362FD621A68AC51004D95F4 /* AppDelegate.swift */,
+				F362FD641A68AC51004D95F4 /* BrowseViewController.swift */,
+				F362FD661A68AC51004D95F4 /* Main.storyboard */,
+				F3923AD81AA9D8CB00078FAD /* SettingsTableViewController.swift */,
+				F362FD691A68AC51004D95F4 /* Images.xcassets */,
+				F362FD6B1A68AC51004D95F4 /* LaunchScreen.xib */,
+				F362FD601A68AC51004D95F4 /* Supporting Files */,
+			);
+			path = Reddit4Watch;
+			sourceTree = "<group>";
+		};
+		F362FD601A68AC51004D95F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F362FD611A68AC51004D95F4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F362FD751A68AC51004D95F4 /* Reddit4WatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				F362FD781A68AC51004D95F4 /* Reddit4WatchTests.swift */,
+				F362FD761A68AC51004D95F4 /* Supporting Files */,
+			);
+			path = Reddit4WatchTests;
+			sourceTree = "<group>";
+		};
+		F362FD761A68AC51004D95F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F362FD771A68AC51004D95F4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F362FD871A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F362FD8A1A68AC6B004D95F4 /* InterfaceController.swift */,
+				F362FDA61A68ACBA004D95F4 /* RedditJsonFetcher.swift */,
+				F362FDA81A68AD31004D95F4 /* JsonPostParser.swift */,
+				F362FDAA1A68AD57004D95F4 /* ThumbnailPostRowController.swift */,
+				F362FD8C1A68AC6B004D95F4 /* Images.xcassets */,
+				F362FD881A68AC6B004D95F4 /* Supporting Files */,
+				F34DB3E01A78751B000FB88C /* TextPostRowController.swift */,
+				F377C8FB1A7C08CF0019D8F9 /* TextPostInterfaceController.swift */,
+				F377C8FD1A7C242E0019D8F9 /* ThumbnailPostInterfaceController.swift */,
+			);
+			path = "Reddit4Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F362FD881A68AC6B004D95F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F362FD891A68AC6B004D95F4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F362FD941A68AC6B004D95F4 /* Reddit4Watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F362FD971A68AC6B004D95F4 /* Interface.storyboard */,
+				F362FD9A1A68AC6B004D95F4 /* Images.xcassets */,
+				F362FD951A68AC6B004D95F4 /* Supporting Files */,
+			);
+			path = "Reddit4Watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		F362FD951A68AC6B004D95F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F362FD961A68AC6B004D95F4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F362FD5C1A68AC51004D95F4 /* Reddit4Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F362FD7C1A68AC51004D95F4 /* Build configuration list for PBXNativeTarget "Reddit4Watch" */;
+			buildPhases = (
+				F362FD591A68AC51004D95F4 /* Sources */,
+				F362FD5A1A68AC51004D95F4 /* Frameworks */,
+				F362FD5B1A68AC51004D95F4 /* Resources */,
+				F362FDA51A68AC6B004D95F4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F362FD9D1A68AC6B004D95F4 /* PBXTargetDependency */,
+			);
+			name = Reddit4Watch;
+			productName = Reddit4Watch;
+			productReference = F362FD5D1A68AC51004D95F4 /* Reddit4Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F362FD711A68AC51004D95F4 /* Reddit4WatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F362FD7F1A68AC51004D95F4 /* Build configuration list for PBXNativeTarget "Reddit4WatchTests" */;
+			buildPhases = (
+				F362FD6E1A68AC51004D95F4 /* Sources */,
+				F362FD6F1A68AC51004D95F4 /* Frameworks */,
+				F362FD701A68AC51004D95F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F362FD741A68AC51004D95F4 /* PBXTargetDependency */,
+			);
+			name = Reddit4WatchTests;
+			productName = Reddit4WatchTests;
+			productReference = F362FD721A68AC51004D95F4 /* Reddit4WatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F362FD851A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F362FDA21A68AC6B004D95F4 /* Build configuration list for PBXNativeTarget "Reddit4Watch WatchKit Extension" */;
+			buildPhases = (
+				F362FD821A68AC6B004D95F4 /* Sources */,
+				F362FD831A68AC6B004D95F4 /* Frameworks */,
+				F362FD841A68AC6B004D95F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F362FD931A68AC6B004D95F4 /* PBXTargetDependency */,
+			);
+			name = "Reddit4Watch WatchKit Extension";
+			productName = "Reddit4Watch WatchKit Extension";
+			productReference = F362FD861A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F362FD8F1A68AC6B004D95F4 /* Reddit4Watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F362FD9F1A68AC6B004D95F4 /* Build configuration list for PBXNativeTarget "Reddit4Watch WatchKit App" */;
+			buildPhases = (
+				F362FD8E1A68AC6B004D95F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reddit4Watch WatchKit App";
+			productName = "Reddit4Watch WatchKit App";
+			productReference = F362FD901A68AC6B004D95F4 /* Reddit4Watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F362FD551A68AC51004D95F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = NetFunctional;
+				TargetAttributes = {
+					F362FD5C1A68AC51004D95F4 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = BPTQC46346;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					F362FD711A68AC51004D95F4 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = F362FD5C1A68AC51004D95F4;
+					};
+					F362FD851A68AC6B004D95F4 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = BPTQC46346;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					F362FD8F1A68AC6B004D95F4 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = F362FD581A68AC51004D95F4 /* Build configuration list for PBXProject "Reddit4Watch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F362FD541A68AC51004D95F4;
+			productRefGroup = F362FD5E1A68AC51004D95F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F362FD5C1A68AC51004D95F4 /* Reddit4Watch */,
+				F362FD711A68AC51004D95F4 /* Reddit4WatchTests */,
+				F362FD851A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension */,
+				F362FD8F1A68AC6B004D95F4 /* Reddit4Watch WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F362FD5B1A68AC51004D95F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F362FD681A68AC51004D95F4 /* Main.storyboard in Resources */,
+				F362FD6D1A68AC51004D95F4 /* LaunchScreen.xib in Resources */,
+				F362FD6A1A68AC51004D95F4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F362FD701A68AC51004D95F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F362FD841A68AC6B004D95F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F362FD8D1A68AC6B004D95F4 /* Images.xcassets in Resources */,
+				F362FD911A68AC6B004D95F4 /* Reddit4Watch WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F362FD8E1A68AC6B004D95F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F362FD991A68AC6B004D95F4 /* Interface.storyboard in Resources */,
+				F362FD9B1A68AC6B004D95F4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F362FD591A68AC51004D95F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F362FD651A68AC51004D95F4 /* BrowseViewController.swift in Sources */,
+				F362FD631A68AC51004D95F4 /* AppDelegate.swift in Sources */,
+				F3923AD91AA9D8CB00078FAD /* SettingsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F362FD6E1A68AC51004D95F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F362FD791A68AC51004D95F4 /* Reddit4WatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F362FD821A68AC6B004D95F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F377C8FE1A7C242E0019D8F9 /* ThumbnailPostInterfaceController.swift in Sources */,
+				F362FDA91A68AD31004D95F4 /* JsonPostParser.swift in Sources */,
+				F362FDAB1A68AD57004D95F4 /* ThumbnailPostRowController.swift in Sources */,
+				F377C8FC1A7C08CF0019D8F9 /* TextPostInterfaceController.swift in Sources */,
+				F362FD8B1A68AC6B004D95F4 /* InterfaceController.swift in Sources */,
+				F362FDA71A68ACBA004D95F4 /* RedditJsonFetcher.swift in Sources */,
+				F34DB3E11A78751B000FB88C /* TextPostRowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F362FD741A68AC51004D95F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F362FD5C1A68AC51004D95F4 /* Reddit4Watch */;
+			targetProxy = F362FD731A68AC51004D95F4 /* PBXContainerItemProxy */;
+		};
+		F362FD931A68AC6B004D95F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F362FD8F1A68AC6B004D95F4 /* Reddit4Watch WatchKit App */;
+			targetProxy = F362FD921A68AC6B004D95F4 /* PBXContainerItemProxy */;
+		};
+		F362FD9D1A68AC6B004D95F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F362FD851A68AC6B004D95F4 /* Reddit4Watch WatchKit Extension */;
+			targetProxy = F362FD9C1A68AC6B004D95F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F362FD661A68AC51004D95F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F362FD671A68AC51004D95F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F362FD6B1A68AC51004D95F4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F362FD6C1A68AC51004D95F4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F362FD971A68AC6B004D95F4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F362FD981A68AC6B004D95F4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F362FD7A1A68AC51004D95F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F362FD7B1A68AC51004D95F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F362FD7D1A68AC51004D95F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Reddit4Watch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		F362FD7E1A68AC51004D95F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Reddit4Watch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		F362FD801A68AC51004D95F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Reddit4WatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reddit4Watch.app/Reddit4Watch";
+			};
+			name = Debug;
+		};
+		F362FD811A68AC51004D95F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Reddit4WatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reddit4Watch.app/Reddit4Watch";
+			};
+			name = Release;
+		};
+		F362FDA01A68AC6B004D95F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Reddit4Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "Reddit4Watch WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F362FDA11A68AC6B004D95F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = Reddit4Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "Reddit4Watch WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		F362FDA31A68AC6B004D95F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Reddit4Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F362FDA41A68AC6B004D95F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Reddit4Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F362FD581A68AC51004D95F4 /* Build configuration list for PBXProject "Reddit4Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F362FD7A1A68AC51004D95F4 /* Debug */,
+				F362FD7B1A68AC51004D95F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F362FD7C1A68AC51004D95F4 /* Build configuration list for PBXNativeTarget "Reddit4Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F362FD7D1A68AC51004D95F4 /* Debug */,
+				F362FD7E1A68AC51004D95F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F362FD7F1A68AC51004D95F4 /* Build configuration list for PBXNativeTarget "Reddit4WatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F362FD801A68AC51004D95F4 /* Debug */,
+				F362FD811A68AC51004D95F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F362FD9F1A68AC6B004D95F4 /* Build configuration list for PBXNativeTarget "Reddit4Watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F362FDA01A68AC6B004D95F4 /* Debug */,
+				F362FDA11A68AC6B004D95F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F362FDA21A68AC6B004D95F4 /* Build configuration list for PBXNativeTarget "Reddit4Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F362FDA31A68AC6B004D95F4 /* Debug */,
+				F362FDA41A68AC6B004D95F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F362FD551A68AC51004D95F4 /* Project object */;
+}

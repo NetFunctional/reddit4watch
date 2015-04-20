@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9D55B691-4A8E-4333-AE93-FA3C079EB0E2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Reddit4Watch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>f08de66a-7144-482a-9e37-a2ed0a641e49</key>
+		<string>svn+ssh://netfunctional.com/svn/nfsummer</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RedditForWatch/trunk/Reddit4Watch/Reddit4Watch.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>f08de66a-7144-482a-9e37-a2ed0a641e49</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>f08de66a-7144-482a-9e37-a2ed0a641e49</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>f08de66a-7144-482a-9e37-a2ed0a641e49</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NF</string>
+		</dict>
+	</array>
+</dict>
+</plist>

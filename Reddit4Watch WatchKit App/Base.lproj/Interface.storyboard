@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--MainInterfaceController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="MainInterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Reddit4Watch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Front Page" id="sfs-oj-EUq">
+                            <color key="textColor" red="0.32941176470588235" green="0.62352941176470589" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="center" id="oMn-nc-mMl">
+                            <items>
+                                <tableRow identifier="ThumbnailPostRowController" id="tvM-Nf-3xJ" customClass="ThumbnailPostRowController" customModule="Reddit4Watch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="LnP-uf-Ws9">
+                                        <items>
+                                            <group width="1" alignment="left" layout="vertical" radius="6" id="U6f-hI-pon">
+                                                <items>
+                                                    <group width="1" alignment="left" id="CcN-Pf-QgP">
+                                                        <items>
+                                                            <group width="0.33000000000000002" height="1" alignment="left" contentMode="scaleAspectFill" radius="6" id="xdp-pa-9zz">
+                                                                <items>
+                                                                    <imageView width="1" height="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" id="Jlz-59-g2f"/>
+                                                                </items>
+                                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                            </group>
+                                                            <label width="0.67000000000000004" widthAdjustment="-4" alignment="right" verticalAlignment="center" text="Title" textAlignment="justified" numberOfLines="2" id="L9d-a8-IgD">
+                                                                <color key="textColor" red="0.93725490199999995" green="0.96862745100000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                            </label>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                    <group width="1" alignment="left" id="hAg-ii-lMK">
+                                                        <items>
+                                                            <label alignment="left" text="0" id="idS-Ag-5I8">
+                                                                <color key="textColor" red="1" green="0.5450980392" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                                            </label>
+                                                            <label alignment="right" text="/r/" id="vIZ-eT-Hyn">
+                                                                <color key="textColor" red="0.3294117647" green="0.62352941179999999" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                                            </label>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                </items>
+                                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <edgeInsets key="margins" left="4" right="4" top="4" bottom="3"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="4" right="4" top="0.0" bottom="2"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="postScoreLabel" destination="idS-Ag-5I8" id="rlU-i2-1HT"/>
+                                        <outlet property="postSubredditLabel" destination="vIZ-eT-Hyn" id="LDz-vP-IeJ"/>
+                                        <outlet property="postThumbnailImage" destination="Jlz-59-g2f" id="hzD-m6-My3"/>
+                                        <outlet property="postTitleLabel" destination="L9d-a8-IgD" id="Guv-ky-d6h"/>
+                                        <segue destination="tvh-ok-XOE" kind="push" id="nS6-X5-kuW"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="TextPostRowController" id="0WJ-OW-82P" customClass="TextPostRowController" customModule="Reddit4Watch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="iLZ-0x-hHp">
+                                        <items>
+                                            <group width="1" alignment="left" layout="vertical" radius="6" id="6iw-4d-N7L">
+                                                <items>
+                                                    <group width="1" alignment="left" id="Rh0-Dz-6g3">
+                                                        <items>
+                                                            <label width="1" alignment="left" verticalAlignment="center" text="Title" textAlignment="justified" numberOfLines="2" id="5vg-dl-cYa">
+                                                                <color key="textColor" red="0.93725490196078431" green="0.96862745098039216" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                            </label>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                    <group width="1" alignment="left" id="isG-PG-qUL">
+                                                        <items>
+                                                            <label alignment="left" text="0" id="nyJ-Pe-BIc">
+                                                                <color key="textColor" red="1" green="0.5450980392" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                                            </label>
+                                                            <label alignment="right" text="/r/" id="geA-hP-BB9">
+                                                                <color key="textColor" red="0.3294117647" green="0.62352941179999999" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                                            </label>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                </items>
+                                                <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <edgeInsets key="margins" left="4" right="4" top="4" bottom="4"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="4" right="4" top="0.0" bottom="2"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="postScoreLabel" destination="nyJ-Pe-BIc" id="yPx-Ov-PNJ"/>
+                                        <outlet property="postSubredditLabel" destination="geA-hP-BB9" id="k84-XO-CgW"/>
+                                        <outlet property="postTitleLabel" destination="5vg-dl-cYa" id="VX0-WC-OGz"/>
+                                        <segue destination="1RR-Np-1Yw" kind="push" id="YOM-Wo-f69"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="postTable" destination="oMn-nc-mMl" id="2nd-Z6-F3j"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--TextPostInterfaceController-->
+        <scene sceneID="wQY-HT-jn5">
+            <objects>
+                <controller identifier="TextPostInterfaceController" id="1RR-Np-1Yw" customClass="TextPostInterfaceController" customModule="Reddit4Watch_WatchKit_Extension">
+                    <items>
+                        <button alignment="center" id="PsJ-PV-0Tq">
+                            <group key="contentGroup" alignment="left" radius="0.0" id="gmL-IL-yZz">
+                                <items>
+                                    <imageView height="32" alignment="center" image="ToPhone" contentMode="scaleAspectFit" id="GGw-Dd-J6w"/>
+                                </items>
+                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                            </group>
+                            <connections>
+                                <action selector="iPhoneButtonAction" destination="1RR-Np-1Yw" id="gKZ-2c-IGd"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="Title" textAlignment="center" numberOfLines="15" id="wa4-a8-H4s">
+                            <color key="textColor" red="0.93725490199999995" green="0.96862745100000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <group width="1" alignment="left" layout="vertical" id="JLq-EP-m9w">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" radius="6" id="6BH-TW-47N">
+                                    <items>
+                                        <label width="1" alignment="center" text="selftext" textAlignment="justified" numberOfLines="1000" id="a5I-qE-4bA">
+                                            <color key="textColor" red="0.93725490199999995" green="0.96862745100000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                        <group width="1" alignment="center" id="L9A-OM-KLm">
+                                            <items>
+                                                <label alignment="left" text="0" id="UzX-fg-dU5">
+                                                    <color key="textColor" red="1" green="0.5450980392" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                                <label alignment="right" text="/r/" id="nCI-rY-0Fn">
+                                                    <color key="textColor" red="0.3294117647" green="0.62352941179999999" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <label alignment="right" text="u/" id="UXV-KG-aV1">
+                                            <color key="textColor" red="0.3294117647" green="0.62352941179999999" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <edgeInsets key="margins" left="4" right="4" top="4" bottom="3"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <edgeInsets key="margins" left="4" right="4" top="0.0" bottom="0.0"/>
+                        </group>
+                        <label alignment="center" text="date" id="UA8-ok-TI4">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <menu key="menu" id="gh3-18-zxy">
+                        <items>
+                            <menuItem title="To iPhone" image="ToPhone" id="O7P-gj-E5p">
+                                <connections>
+                                    <action selector="iPhoneButtonAction" destination="1RR-Np-1Yw" id="8hB-ce-ehw"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="postAuthorLabel" destination="UXV-KG-aV1" id="wcG-ob-pF2"/>
+                        <outlet property="postDateLabel" destination="UA8-ok-TI4" id="tDW-9Q-5N7"/>
+                        <outlet property="postScoreLabel" destination="UzX-fg-dU5" id="pRC-b7-Mn2"/>
+                        <outlet property="postSubredditLabel" destination="nCI-rY-0Fn" id="Jil-j8-giR"/>
+                        <outlet property="postTextLabel" destination="a5I-qE-4bA" id="w2U-4N-UBk"/>
+                        <outlet property="postTitleLabel" destination="wa4-a8-H4s" id="a8s-PP-U3g"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="568" y="293"/>
+        </scene>
+        <!--ThumbnailPostInterfaceController-->
+        <scene sceneID="flJ-Yw-N0P">
+            <objects>
+                <controller identifier="ThumbnailPostInterfaceController" id="tvh-ok-XOE" customClass="ThumbnailPostInterfaceController" customModule="Reddit4Watch_WatchKit_Extension">
+                    <items>
+                        <button alignment="center" id="PJx-AQ-xWt">
+                            <group key="contentGroup" alignment="left" radius="0.0" id="Wfx-x5-E6M">
+                                <items>
+                                    <imageView height="32" alignment="center" image="ToPhone" contentMode="scaleAspectFit" id="ZZ0-Al-smt"/>
+                                </items>
+                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                            </group>
+                            <connections>
+                                <action selector="iPhoneButtonAction" destination="tvh-ok-XOE" id="caa-Ph-hnj"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" text="Title" textAlignment="center" numberOfLines="15" id="zZL-jF-3FX">
+                            <color key="textColor" red="0.93725490199999995" green="0.96862745100000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <imageView width="1" alignment="center" contentMode="scaleAspectFill" id="Dys-hT-ujo"/>
+                        <group width="1" alignment="left" id="3EG-Tb-ixC">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" radius="6" id="rdc-TG-Qei">
+                                    <items>
+                                        <group width="1" alignment="center" id="yn5-pM-jsI">
+                                            <items>
+                                                <label alignment="left" text="0" id="8Zd-sV-7Wy">
+                                                    <color key="textColor" red="1" green="0.5450980392" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                                <label alignment="right" text="/r/" id="ZzV-9b-mOs">
+                                                    <color key="textColor" red="0.3294117647" green="0.62352941179999999" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <label alignment="right" text="u/" id="QmI-vX-wt3">
+                                            <color key="textColor" red="0.3294117647" green="0.62352941179999999" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <edgeInsets key="margins" left="4" right="4" top="4" bottom="3"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="4" right="4" top="1" bottom="0.0"/>
+                        </group>
+                        <label alignment="center" text="date" id="A6c-Oc-uS6">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <menu key="menu" id="jF4-Xf-kgr">
+                        <items>
+                            <menuItem title="To iPhone" image="ToPhone" id="dJp-Lh-AFv">
+                                <connections>
+                                    <action selector="iPhoneButtonAction" destination="tvh-ok-XOE" id="GSd-F1-Fv3"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="postAuthorLabel" destination="QmI-vX-wt3" id="ZR4-Uz-mo2"/>
+                        <outlet property="postDateLabel" destination="A6c-Oc-uS6" id="pIl-HG-YSY"/>
+                        <outlet property="postScoreLabel" destination="8Zd-sV-7Wy" id="g67-gD-MwB"/>
+                        <outlet property="postSubredditLabel" destination="ZzV-9b-mOs" id="YeI-rO-OfU"/>
+                        <outlet property="postThumbnailImage" destination="Dys-hT-ujo" id="YPE-Sc-7ff"/>
+                        <outlet property="postTitleLabel" destination="zZL-jF-3FX" id="o15-N9-Q4n"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="494" y="646"/>
+        </scene>
+    </scenes>
+</document>
